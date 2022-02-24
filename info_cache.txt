@@ -1,0 +1,1 @@
+b'<msgType=oneday,LjtId=LB2110N001,sCode=OK,uCode=147821,time=2000-00-00 00:00:00,weights=0,volumes=683,ver=1.0,crc=55205,>\r\n'
