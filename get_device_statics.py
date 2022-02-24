@@ -42,15 +42,15 @@ def sent_rsp_msg(msg):
     content = {"dataType": 1,"yload": msg_b64}	
         
     body = {"content": content,
-            "deviceId": "a1ed573525d84a9e9c6eaa3b3501fad3",
+            "deviceId": "",
             "operator": "get_device_statics.py by Steve D. J.",
-            "productId": 15145027,
+            "productId": ,
             "ttl": 7200,
             "level": 1
             }
     
     body = json.dumps(body)
-    result = apis.aep_device_command.CreateCommand('b5mQ0r3luNc', 'wBI1f4q127', '6b0dfee16a7b4b12a228f084a0720538', body)
+    result = apis.aep_device_command.CreateCommand('', '', '', body)
     print('result='+str(result))
 
 
@@ -59,7 +59,7 @@ def update_info():
     
     # 接收信息并提取有效内容
     try:
-        raw_info = apis.aep_device_status.QueryDeviceStatusList('b5mQ0r3luNc', 'wBI1f4q127', '{"productId":"15145027","deviceId":"a1ed573525d84a9e9c6eaa3b3501fad3"}')
+        raw_info = apis.aep_device_status.QueryDeviceStatusList('', '', '{"productId":"","deviceId":""}')
     except:
         offline_flag = 1
         return -1
