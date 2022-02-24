@@ -12,8 +12,8 @@ Copyright (c) 2022 Steve D. J.. All Rights Reserved.
 
 #import sys
 #sys.path.append('..')
-import apis.aep_device_status
-import apis.aep_device_command
+import aep_device_status
+import aep_device_command
 import base64
 import time
 import numpy as np
